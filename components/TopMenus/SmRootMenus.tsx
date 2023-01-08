@@ -11,7 +11,7 @@ const SmRootMenus : FC<SmTopMenuRoot> = ({rootItems, updaterCallback}: SmTopMenu
     return (<>
             <Link href={rootItems.link} onClick={() => updaterCallback(rootItems.name)}
                   className='flex justify-between block px-2 py-1 mt-2 rounded text-white
-                  font-semiBold hover:text-amber-600'>
+                  font-semiBold hover:text-amber-600 z-10'>
                 {rootItems.name}
                 {rootItems.hasSubitem && <>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

@@ -21,7 +21,7 @@ const MdRootMenus: FC<MdRootMenusProps> = ({items}: MdRootMenusProps): JSX.Eleme
                             </label>}
                         </Link>
                         {/* Sub menu items */}
-                        {item.hasSubitem !== undefined && item.subitems !== undefined && <div className="hidden group-hover/item:block" id={`${item.name}SubItems`}>
+                        {item.hasSubitem !== undefined && item.subitems !== undefined && <div className="hidden group-hover/item:block z-10" id={`${item.name}SubItems`}>
                             <MdSubMenuItem items={item.subitems} />
                         </div> }
                     </div>
