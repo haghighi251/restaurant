@@ -7,7 +7,7 @@ const SmSubMenuItem: FC<SubMenuProps> = ({subitems}: SubMenuProps): JSX.Element 
         return <></>;
 
     return (
-        <div className='flex flex-col px-6'>
+        <div className='flex flex-col px-6 z-20'>
             {subitems.map((item: SubItem, index: number) => (
                 <Link href={item.link} key={index} className="text-white py-1 cursor-pointer
                  font-medium hover:text-amber-600 ">

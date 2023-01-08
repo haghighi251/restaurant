@@ -44,11 +44,11 @@ const TopMenu: FC = (): JSX.Element => {
             <FirstRow/>
 
             {/* The second row. Top menu bar. For sm screen, We do have a different component. */}
-            <div className='flex justify-between md:justify-evenly md:grid md:grid-cols-4 items-center px-4 py-3 border-t border-gray-700'>
+            <div className='flex justify-between md:justify-evenly md:grid md:grid-cols-4 items-center px-4 py-3 border-t border-gray-700 z-10'>
                 {/* site logo */}
                 <div className='text-white '>
-                    <Link href='/Users/amir/Desktop/Programming/JavaScript/React.js/restaurant/pages'>
-                        <img src='logo.png' className='h-8' alt={process.env.SITE_TITLE}/>
+                    <Link href='/'>
+                        <img src='logo.png' className='h-10' alt={process.env.SITE_TITLE}/>
                     </Link>
                 </div>
 

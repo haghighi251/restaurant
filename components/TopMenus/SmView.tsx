@@ -6,7 +6,7 @@ import {SmViewProps} from "../../typing";
 const SmView: FC<SmViewProps> = ({smButton, smButtonUpdater, rootMenus, subMenuUpdater}: SmViewProps) : JSX.Element => {
     return (
         <div
-            className={`px-2 pt-2 pb-4 ${smButton ? 'visible' : 'hidden'} bg-gray-800 absolute left-0 top-0 right-12`}>
+            className={`px-2 pt-2 pb-4 ${smButton ? 'visible' : 'hidden'} bg-gray-800 absolute left-0 top-0 right-12 z-10`}>
             <div className='flex justify-between px-4 py-3'>
                 {/* site logo in sm screen */}
                 <div className='text-white'>
