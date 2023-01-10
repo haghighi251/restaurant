@@ -11,7 +11,7 @@ const SmSubMenuItem: FC<SubMenuProps> = ({subitems}: SubMenuProps): JSX.Element 
             {subitems.map((item: SubItem, index: number) => (
                 <Link href={item.link} key={index} className="text-white py-1 cursor-pointer
                  font-medium hover:text-amber-600 ">
-                   {item.name}
+                    {item.name}
                 </Link>
             ))}
         </div>
