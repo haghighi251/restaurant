@@ -1,4 +1,5 @@
 import Slider from "../components/Slider/Slider";
+import TheSecondRow from "../components/theSecondRow/TheSecondRow";
 
 export default async function Home() {
 
@@ -11,6 +12,10 @@ export default async function Home() {
       <>
           {/* Slider */}
           <Slider />
+
+          {/* the second row */}
+          <TheSecondRow />
+
       </>
   )
 }
